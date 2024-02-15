@@ -1,7 +1,8 @@
 # Stereo Visual Odometry
 
 This project aims to achieve odometry (finding the 6D pose of the host with respect to world space) using a system consisting of multiple cameras.
-This is accomplished by calculating using the 7/5 point algorithm to calculate the fundamental/essential matrix and then using this to accomplish 
+This is accomplished by using the 7/5 point algorithm to calculate the fundamental/essential matrix, then using these matrices, the cameras'
+intrinsic parameters, and the differences between the data captured of the same scene by multiple image sensors simultaneously, to accomplish 
 relative camera pose estimation and host triangulation. 
 
 This technique has potential to be used in a vast array of different contexts from AR, to robotics, to SFM (Structure From Motion), to mapping and
